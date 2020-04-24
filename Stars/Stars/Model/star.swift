@@ -14,7 +14,7 @@
 import Foundation
 
 
-struct StarL: Codable {
+struct Star: Codable {
     var name: String
     var distance: Double
     

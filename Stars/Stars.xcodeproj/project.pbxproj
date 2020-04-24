@@ -14,6 +14,7 @@
 		3C740F2F24527AB7006FBE32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C740F2E24527AB7006FBE32 /* Assets.xcassets */; };
 		3C740F3224527AB7006FBE32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C740F3024527AB7006FBE32 /* LaunchScreen.storyboard */; };
 		3C740F3A2452838E006FBE32 /* star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C740F392452838E006FBE32 /* star.swift */; };
+		3C740F3C245284B5006FBE32 /* StarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C740F3B245284B5006FBE32 /* StarsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3C740F3124527AB7006FBE32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C740F3324527AB7006FBE32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C740F392452838E006FBE32 /* star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = star.swift; sourceTree = "<group>"; };
+		3C740F3B245284B5006FBE32 /* StarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 		3C740F2424527AB4006FBE32 /* Stars */ = {
 			isa = PBXGroup;
 			children = (
+				3C740F3E245284CF006FBE32 /* Model Controller */,
+				3C740F3D245284BA006FBE32 /* Model */,
 				3C740F2524527AB4006FBE32 /* AppDelegate.swift */,
 				3C740F2724527AB4006FBE32 /* SceneDelegate.swift */,
 				3C740F2924527AB4006FBE32 /* StarsViewController.swift */,
@@ -65,9 +69,24 @@
 				3C740F2E24527AB7006FBE32 /* Assets.xcassets */,
 				3C740F3024527AB7006FBE32 /* LaunchScreen.storyboard */,
 				3C740F3324527AB7006FBE32 /* Info.plist */,
-				3C740F392452838E006FBE32 /* star.swift */,
 			);
 			path = Stars;
+			sourceTree = "<group>";
+		};
+		3C740F3D245284BA006FBE32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C740F392452838E006FBE32 /* star.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C740F3E245284CF006FBE32 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C740F3B245284B5006FBE32 /* StarsController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +164,7 @@
 				3C740F2624527AB4006FBE32 /* AppDelegate.swift in Sources */,
 				3C740F2824527AB4006FBE32 /* SceneDelegate.swift in Sources */,
 				3C740F3A2452838E006FBE32 /* star.swift in Sources */,
+				3C740F3C245284B5006FBE32 /* StarsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
