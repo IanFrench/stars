@@ -11,13 +11,14 @@ import Foundation
 
 class StarController   {
     
-    init() { self.loadFromPersistentStore()
+    init() {
+        self.loadFromPersistentStore()
         
     }
     
     private(set) var stars: [Star] = []
   
-    @discardableResult func createStar(with name: String, distance: Double) -> Star {
+    @discardableResult func createStar(name: String, distance: Double) -> Star {
         let star = Star(name: name, distance: distance)
         stars.append(star)
         self.saveToPersistentStore()
